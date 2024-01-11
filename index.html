@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alzheimer's Detection App</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Alz Login</h2>
+        <div id="loginSection">
+            
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <button type="button" id="loginButton">Login</button>
+                <p id="signupLink">New user? <a href="#" onclick="showSignupForm()">Sign up</a></p>
+            </form>
+        </div>
+        <div id="signupSection" style="display: none;">
+            <form>
+                <label for="newEmail">Email:</label>
+                <input type="email" id="newEmail" placeholder="Enter your email">
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" placeholder="Enter your password">
+                <button type="button" id="signupButton" onclick="signup()">Sign up</button>
+                <p id="loginLink">Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+            </form>
+        </div>
+        <div id="appSection" style="display: none;">
+            <input type="file" id="imageInput" accept="image/*">
+            <button type="button" id="uploadButton">Select Image</button>
+            <button type="button" id="predictButton">Predict Alzheimer's</button>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

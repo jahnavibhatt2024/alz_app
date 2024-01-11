@@ -1,0 +1,43 @@
+body {
+    background-color: #fff; /* Set your desired background color */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    
+}
+
+#container {
+    max-width: 900px;
+   
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: url('background.png') no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#imageInput {
+    display: none;
+}
+
+#uploadButton, #predictButton {
+    background-color: #4caf50; /* Set your desired button color */
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+}
